@@ -1,0 +1,10 @@
+{
+  "uptime": {
+    "api_key": "YOUR UPTIME ROBOT API KEY",
+    "url": "https://api.uptimerobot.com/v2/getMonitors"
+  },          
+  "kavenegar": {
+    "api_key": "YOUR KAVENEGAR API KEY",
+    "receptor": "RECVEPTOR PHONE NUMBER"
+  }
+}
