@@ -1,20 +1,8 @@
 import requests 
 from kavenegar import *
 import json
-# Todo()
-# 0) temporary run api keys and reciever from a dotfile
-# 1) make it systemd friendly, which can run on background 
-# 2) make a config file with yaml or json format which can specified the API Keys and reciever and 
-# 3) handling custom message types
-# 4) make it to run config file in /etc/smsify.conf as a default location
-# 5) using -c /home/user/smsfy.conf as a custom located config
-# 4) change the code to run and import config files with multiply reciever 
-# 5) make a init argument which can create config file in default or user specified locatio,
-# 6) create systemd file and enable / start it in init command
-# 7) add multiply reciever wizard in init
-# 8) add multiply hosts with uptime robot nickname in it
 def get_data():
-    file = open('smsify.conf')
+    file = open('smsfy.json')
     json_data = json.load(file)
     uptime_API_KEY = json_data['uptime']['api_key']
     uptime_URL = json_data['uptime']['url']
